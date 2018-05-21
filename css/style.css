@@ -1,0 +1,16 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    background-color:#222;
+}
+
+ul {
+}
+
+#option_button {
+    color: #111;
+    cursor: pointer
+}

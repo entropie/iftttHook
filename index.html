@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Circular UI</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="ui-page" id="main">
+    <header class="ui-header">
+      <h2 class="ui-title">Callbacks<span id="option_button">#</span></h2>
+    </header>
+    <div class="ui-content content-padding">
+      <ul class="ui-listview" id="content">
+      </ul>
+    </div>
+  </div>
+
+  <div class="ui-page" id="options">
+    <header class="ui-header">
+      <h2 class="ui-title">Options</h2>
+    </header>
+    <div class="ui-content content-padding">
+      <ul>
+        <li>
+          KEY
+          <br>
+          <input type="text" value="1" id="ifttt_key" name="ifttt_key" />
+          <input type="button" id="savekey" value="SAVE" onclick="saveKey(); return false" autocomplete="off"/>
+        </li>
+        <li>
+          LIST
+          <br>
+          <input type="text" value="2" id="events"  name="events" />
+          <input type="button" id="save_list" value="SAVE" onclick="saveEvents(); return false" autocomplete="off"/>
+        </li>
+      </ul>
+    </div>
+  </div>
+        
+
+
+  <div class="ui-page" id="pageProcessing" data-enable-page-scroll="false">
+    <header class="ui-header">
+      <h2 class="ui-title">Processing</h2>
+    </header>
+    <div class="ui-content content-padding">
+      <div class="ui-processing"></div>
+      <div class="ui-processing-text">
+        Sending...
+      </div>
+    </div>
+  </div>
+        
+  <script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+
+  <script src="js/jquery.js"></script>
+  <!-- <script type="text/javascript" src="js/circle-helper.js"></script>  -->
+  <script src="js/main.js"></script>
+  <script src="lowBatteryCheck.js"></script>
+</body>
+</html>
